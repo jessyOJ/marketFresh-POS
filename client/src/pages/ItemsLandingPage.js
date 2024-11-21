@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import { Button ,Table} from "antd";
 import "../resources/LandingPage.css"; // Make sure to create this CSS file
 import { useNavigate } from "react-router-dom";
-
+import { BASE_URL } from "../config";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 function ItemsLandingPage() {
@@ -15,7 +15,7 @@ function ItemsLandingPage() {
         try {
           const fetchData = async () => {
             dispatch({ type: "showLoading" });
-            const response = await axios.get("/api/marketFresh/getAllItems");
+            const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
             const items = response.data;
             setItem(items);
             setDuplicateItemData(items)

@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { EyeOutlined } from "@ant-design/icons";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
-
+import {BASE_URL} from "../config"
 function BillPage() {
   const contentRef = useRef();
   const reactToPrintFn = useReactToPrint({contentRef});
@@ -23,7 +23,7 @@ function BillPage() {
     const fetchData = async () => {
       try {
         dispatch({ type: "showLoading" });
-        const response = await axios.get("/api/marketFresh/getAllBills");
+        const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllBills`);
         const bills = response.data.reverse();
         setBillsData(bills);
         setDuplicateBillsData(bills);

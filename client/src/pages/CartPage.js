@@ -4,6 +4,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { Button, Modal, Form, Input, Table, message, Select } from "antd";
 import {DeleteOutlined,PlusCircleOutlined,MinusCircleOutlined} from '@ant-design/icons'
 import DefaultLayout from './DefaultLayout'
+import {BASE_URL} from "../config"
 import axios from 'axios'
 import {  useNavigate } from 'react-router-dom';
 import '../resources/item.css'
@@ -118,7 +119,7 @@ try {
   }
   try {
     dispatch({type:"showLoading"})
-    const result = await axios.post("/api/marketFresh/makePayment",paymentDetails)
+    const result = await axios.post(`${BASE_URL}/api/marketFresh/makePayment`,paymentDetails)
     dispatch({type:'hideLoading'})
     message.success('payment has been made successfully!').then((result)=>{
 window.location.href='/bills'

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
+import {BASE_URL} from "../config"
 import { Col, Row } from "antd";
 import Items from "../components/Items";
 import "../resources/item.css";
@@ -41,7 +42,7 @@ function HomePage() {
     try {
       const fetchData = async () => {
         dispatch({ type: "showLoading" });
-        const response = await axios.get("/api/marketFresh/getAllItems");
+        const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
         const items = response.data;
         setItem(items);
         dispatch({ type: "hideLoading" });

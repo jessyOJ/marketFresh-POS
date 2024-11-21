@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
+import { BASE_URL } from "../config";
 import '../resources/layout.css'
 
 function ItemsPage() {
@@ -19,7 +20,7 @@ function ItemsPage() {
       try {
         const fetchData = async () => {
           dispatch({ type: "showLoading" });
-          const response = await axios.get("/api/marketFresh/getAllItems");
+          const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
           const items = response.data;
           setItem(items);
           setDuplicateItemData(items)
@@ -79,12 +80,12 @@ function ItemsPage() {
    if(editItem===null){
     try {
       dispatch({ type: "showLoading" });
-      const response = await axios.post("/api/marketFresh/createItem", values);
+      const response = await axios.post(`${BASE_URL}/api/marketFresh/createItem`, values);
       message.success("item saved successfully");
       setAddItemsModal(false); // Close modal after saving
       //Refresh item list after saving new item
       const fetchData = async () => {
-        const response = await axios.get("/api/marketFresh/getAllItems");
+        const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
         setItem(response.data);
       };
       await fetchData();
@@ -97,13 +98,13 @@ function ItemsPage() {
    }else{
     try {
       dispatch({ type: "showLoading" });
-      const response = await axios.post("/api/marketFresh/editItem", {...values,_id:editItem._id});
+      const response = await axios.post(`${BASE_URL}/api/marketFresh/editItem`, {...values,_id:editItem._id});
       message.success("item edited successfully");
       setEditItem(null)
       setAddItemsModal(false); // Close modal after saving
      
       const fetchData = async () => {
-        const response = await axios.get("/api/marketFresh/getAllItems");
+        const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
         setItem(response.data);
       };
       await fetchData();
@@ -118,11 +119,11 @@ function ItemsPage() {
   async function deleteItem(record) {
     try {
       dispatch({ type: "showLoading" });
-      const response = await axios.post("/api/marketFresh/deleteItem", { _id: record._id });
+      const response = await axios.post(`${BASE_URL}/api/marketFresh/deleteItem`, { _id: record._id });
       if (response.status === 200) { 
         message.success("Item deleted successfully");
         const fetchData = async () => {
-          const response = await axios.get("/api/marketFresh/getAllItems");
+          const response = await axios.get(`${BASE_URL}/api/marketFresh/getAllItems`);
           setItem(response.data);
         }; 
         await fetchData(); // Await to ensure items are updated before hiding loading

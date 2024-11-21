@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import itemsRoute from './routes/ItemsRoute.js'
 import userRoute from './routes/userRoute.js'
 import billRoute from './routes/billRoute.js'
+import auth from './middleware/auth.js'
 import path from 'path'
 const app =express()
 mongoose.connect('mongodb://localhost:27017/marketFresh-POS').then(()=>{
