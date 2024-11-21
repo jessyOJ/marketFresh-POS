@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
-import BASE_URL from "../config"
+import BASE_URL from "../config.js"
 import { Col, Row } from "antd";
 import Items from "../components/Items";
 import "../resources/item.css";
