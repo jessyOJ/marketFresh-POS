@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import { Button ,Table} from "antd";
 import "../resources/LandingPage.css"; // Make sure to create this CSS file
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../config";
+import  BASE_URL from "../config";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 function ItemsLandingPage() {

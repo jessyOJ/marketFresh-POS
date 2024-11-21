@@ -5,7 +5,7 @@ import { Button, Modal, Form, Input, Table, message, Select } from "antd";
 import { useDispatch } from "react-redux";
 import {EyeOutlined} from '@ant-design/icons'
 import DefaultLayout from "./DefaultLayout";
-import {BASE_URL} from "../config"
+import BASE_URL from "../config"
 import axios from "axios";
 
 function CustomerPage() {

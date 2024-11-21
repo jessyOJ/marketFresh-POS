@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { EyeOutlined } from "@ant-design/icons";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
-import {BASE_URL} from "../config"
+import BASE_URL from "../config"
 function BillPage() {
   const contentRef = useRef();
   const reactToPrintFn = useReactToPrint({contentRef});

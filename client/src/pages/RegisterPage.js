@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import axios from 'axios';
+import  BASE_URL  from "../config";
 import { Form, Input,Row,Col, Button, message } from 'antd';
 import { useDispatch } from 'react-redux';
 import '../resources/auth.css'
@@ -20,7 +21,7 @@ function RegisterPage() {
 
         try {
             dispatch({ type: 'showLoading' });
-            const response = await axios.post('/api/marketFresh/register', user);
+            const response = await axios.post(`${BASE_URL}/api/marketFresh/register`, user);
             message.success('Registration successful');
             setTimeout(() => {
                 navigate('/login')

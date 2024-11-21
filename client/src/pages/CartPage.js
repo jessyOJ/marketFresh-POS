@@ -4,7 +4,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { Button, Modal, Form, Input, Table, message, Select } from "antd";
 import {DeleteOutlined,PlusCircleOutlined,MinusCircleOutlined} from '@ant-design/icons'
 import DefaultLayout from './DefaultLayout'
-import {BASE_URL} from "../config"
+import BASE_URL from "../config"
 import axios from 'axios'
 import {  useNavigate } from 'react-router-dom';
 import '../resources/item.css'

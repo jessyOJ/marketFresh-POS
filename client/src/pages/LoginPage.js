@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import  BASE_URL  from "../config";
 import { Form, Input,Row,Col, Button,Typography,message } from 'antd';
 import { UserOutlined, LockOutlined  } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
@@ -13,7 +14,7 @@ const {email,password}=values
 const user={email,password}
 try {
   dispatch({type:'showLoading'})
-  const response = (await axios.post('/api/marketFresh/login',user)).data
+  const response = (await axios.post(`${BASE_URL}/api/marketFresh/login`,user)).data
 message.success('login successful')
 
 

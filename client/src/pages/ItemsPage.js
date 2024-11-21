@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import DefaultLayout from "./DefaultLayout";
 import axios from "axios";
-import { BASE_URL } from "../config";
+import  BASE_URL  from "../config";
 import '../resources/layout.css'
 
 function ItemsPage() {
