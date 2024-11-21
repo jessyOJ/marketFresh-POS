@@ -6,12 +6,15 @@ import billRoute from './routes/billRoute.js'
 import auth from './middleware/auth.js'
 import connectToDB from './dbConnect.js'
 import path from 'path'
+import cors from 'cors'
+connectToDB()
 const app =express()
 // mongoose.connect('mongodb://localhost:27017/marketFresh-POS').then(()=>{
 //     console.log('connected to the database successfully')
 // }).catch(()=>{
 //     console.log('unable to connect')
 // })
+app.use(cors())
 app.use(express.json())
 app.use('/api/marketFresh',itemsRoute)
 app.use('/api/marketFresh',userRoute)
