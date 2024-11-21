@@ -1,0 +1,300 @@
+.landing {
+  background-image: url('./landing.svg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center;
+ min-height: 100vh;
+  width: 100%; 
+  margin-bottom:none!important;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    height: 100vh;          
+    text-align: center; 
+    color:white;
+    margin-bottom:10px!important;
+  }
+  .header h1{
+    font-size:80px;
+    margin-top:none!important;
+   
+  }
+.header p{
+    font-family: "Brush Script MT", cursive; /* Brush Script is a default font on most systems */
+    font-size: 25px;
+    color:white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .landing-page {
+    width: 100%;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+  
+  .landing-items img {
+    border-radius: 15px ;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 30px;
+    width:180px!important;
+    height:120px!important; 
+    box-shadow: 0 0 5px #E8AE3C; 
+  }
+  .landing-items img:nth-child(1) {
+    transform: rotate(7deg); 
+  }
+  
+  .landing-items img:nth-child(2) {
+    transform: rotate(-5deg);
+  }
+  
+  .landing-items img:nth-child(3) {
+    transform: rotate(7deg); 
+  }
+  .landing-items img:nth-child(4) {
+    transform: rotate(-5deg); 
+  }
+  
+  .landing-items img:nth-child(5) {
+    transform: rotate(7deg); 
+  }
+  .landing-btn {
+    background-color:#E8AE3C!important;   
+    color: white!important;         
+    border: none!important;        
+    border-radius: 20px!important;          
+    font-size: 16px!important;       
+    font-weight: 300!important; 
+    align-text:center !important;       
+    width: 140px!important; 
+    height: 40px !important;          
+    text-align: center!important; 
+    justify-content: center!important; 
+    margin-top: 30px!important; 
+}
+.landing-btn:hover{
+  color: black !important; 
+}
+.links-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+ 
+}
+
+.links-container a {
+  color: white !important;
+  justify-content: center;
+  text-decoration: none !important;
+  padding: 10px !important;
+  transition: color 0.3s ease;
+  display: block; /* Ensures the link behaves like a block element */
+}
+
+.links-container a:hover {
+  color: #E8AE3C !important; /* Change color on hover */
+}
+
+.view-all-button {
+  margin-left: 10px!important;
+  padding: 8px 16px;
+  border: solid #E8AE3C !important;
+  background-color: transparent !important;
+  color: white!important;
+  font-size: 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-all-button:hover {
+   
+  color: #E8AE3C!important;
+}
+/* General container styling */
+.landing-items {
+ 
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+/* Header styling */
+.landing-items h3 {
+  text-align: center; /* Center the title */
+  font-size: 24px; /* Adjust font size */
+  color: #333; /* Darker text for visibility */
+  margin-bottom: 10px; /* Space below the header */
+}
+
+/* Table container */
+.landing-items .ant-table-wrapper {
+  width: 100%; /* Stretch the table to fit the screen */
+  max-width: 1200px; /* Optional: set a maximum width */
+  margin: 0 auto; /* Center the table within the screen */
+  border-radius: 8px; /* Round the corners slightly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+/* Table cells */
+.landing-items .ant-table td,
+.landing-items .ant-table th {
+  text-align: center; /* Center text in cells */
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .landing-items .ant-table-wrapper {
+    max-width: 100%; /* Allow full width on smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+
+}
+.input-groups input {
+  box-shadow: 0 0 2px #E8AE3C!important;
+  margin-top:15px!important;
+  
+  align-items: center;
+border-radius:15px;
+margin-left:20px;
+padding :10px;
+}
+.input-groups{
+  margin-top: 50px!important;
+  justify-content: center!important;
+}
+.search-container {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 15px; /* Space between the search bar and the exit link */
+  margin-top: 50px; /* Add margin at the top */
+}
+
+.input-group {
+  flex: 1; /* Allow the search bar to take up available space */
+  max-width: 600px; /* Limit the width of the input group */
+}
+
+.item-container {
+  padding: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.input-group {
+  flex: 1; /* Allows the search bar to take available space */
+  max-width: 600px; /* Restricts the width */
+}
+
+.input-group input {
+  margin-top:15px!important;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.exit-link {
+  font-size: 15px;
+  color: white!important;
+  text-decoration: none;
+  padding: 5px 10px;
+  border:none!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 1px; 
+}
+
+.exit-link:hover {
+  color: #E8AE3C!important;
+}
+
+/* Modal Styling */
+.custom-modal .ant-modal-content {
+  border-radius: 10px;
+  padding: 25px;
+  background-color: #F3E5AB;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-modal .ant-modal-header {
+  background-color: #F3E5AB;
+  font-size:20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.custom-modal .ant-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.custom-modal .modal-content {
+  padding: 15px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.custom-modal .modal-content h2 {
+  color: #001529;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.custom-modal .modal-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.custom-modal .modal-content a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+

@@ -1,0 +1,190 @@
+.item{
+    box-shadow: 0 0 2px black !important;
+    border-radius:5px !important;
+    padding:5px!important;
+    margin-top:5px!important;
+    margin-bottom:10px!important;
+}
+.item:hover{
+  transform:scale(1.08);
+  transition: all 0.3;
+}
+ .item img{
+  border-radius:5px !important;
+  margin-bottom:2px!important;
+}
+.item h4{
+    color:black!important;
+    font-size:20px!important;
+    text-align:center!important;
+}
+.item .price{
+    align:center!important;
+    
+
+}.item .btn{
+    background:#4CBB17!important;
+    color:white!important;
+}
+.category{
+    margin-right:50px!important;
+    padding-left:25px!important;
+    border:solid #B9BBB6!important;
+    padding-left:20px !important;
+    align-items:center !important;
+    border-radius:15px!important;
+}
+/* Hide scrollbar for webkit browsers */
+.categories-container {
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+.categories-container::-webkit-scrollbar {
+  display: none;  /* For Chrome, Safari, and Edge */
+}
+
+.category h4{
+    margin-right:15px!important; 
+}
+.category img{
+    border-radius:10px!important; 
+}
+.selected-category{
+    border:solid #E8AE3C!important;
+}
+.subtotal h3{
+    color:#E8AE3C!important;
+   font-size:25px !important;
+   font-weight:bold!important;
+
+}.subtotal{
+    text-align:right!important;
+    color:#E8AE3C!important;
+    font-size:15px !important;
+    font-weight:bold!important;
+}
+.sub-btn{
+    margin-left: auto;
+    background-color:black !important;
+}
+.modal-subtotal {
+    text-align:left!important;
+    font-size:15px !important;
+    font-weight:light!important;
+    margin-top:15px!important;
+}
+.bill-model h1{
+    font-size:50px !important; 
+    font-weight:bold!important;
+}
+.bill-model p{
+    margin-top:0!important; 
+    margin-bottom:0 !important; 
+    font-size:12px !important; 
+    padding-bottom:0!important;
+}
+.bill-header{
+    border-bottom:2px dotted black !important;
+    
+}
+.bill-model{
+    margin-top:1px!important; 
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;          /* Remove borders for clean print */
+    box-shadow: none;      /* Remove shadows for print */
+    font-family: Arial, sans-serif;
+}
+.p-bill{
+    margin-bottom:0 !important; 
+}
+.customer-details{
+    margin-top:15px!important; 
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 12px;
+}
+.costs {
+    border-bottom:2px dotted black !important;
+    margin-bottom:8px !important; 
+    font-size:15px !important; 
+    margin-top:15px!important;
+    justify-content: space-between; 
+}
+.total p{
+    margin-top:10px!important; 
+    border-bottom:2px dotted black !important;
+    font-size:25px !important; 
+    
+}
+.recom{
+    font-size:10px !important; 
+    font-weight:bold!important;
+}
+@media print {
+
+    .bill-model {
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 20px;
+      border: none;          /* Remove borders for clean print */
+      box-shadow: none;      /* Remove shadows for print */
+      font-family: Arial, sans-serif;
+    }
+    .bill-header h1 {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .bill-header p {
+      font-size: 10px;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+    .customer-details {
+      margin-top: 15px;
+      padding: 10px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      font-size: 12px;
+    }
+    .customer-details p {
+      margin: 3px 0;
+    }
+    .ant-table-tbody > tr > td {
+      padding: 6px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    /* Costs and total styling */
+    .costs, .total {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+   
+  
+    /* Footer message */
+    .recom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 10px;
+      color: #333;
+    }
+  
+    /* Remove page margins for better alignment */
+    @page {
+      margin: 10mm;
+    }
+  }
+  .input-group input {
+    box-shadow: 0 0 2px #E8AE3C!important;
+    margin-bottom:5px!important;
+   
+ 
+  }
+  
