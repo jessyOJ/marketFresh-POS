@@ -27,15 +27,8 @@ dispatch({type:'hideLoading'})
 
 } catch (error) {
   dispatch({type:'hideLoading'})
-  if(error.response && error.response.status===400){
-    const errorMessage =error.response.data||error.response.data.error
-    message.error(errorMessage)
-  }else{
-    message.error('user does not exist')
-  }
-  
-   
-  
+  message.error('user does not exist')
+
 }
 }
 useEffect(()=>{

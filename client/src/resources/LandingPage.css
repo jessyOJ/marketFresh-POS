@@ -296,5 +296,51 @@ padding :10px;
   color: #1890ff;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .links-container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
 
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .landing-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .landing-items img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .links-container {
+    font-size: 12px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .landing-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .landing-items img {
+    width: 120px;
+  }
+}
 
