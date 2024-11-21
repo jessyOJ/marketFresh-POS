@@ -73,15 +73,15 @@ function ItemsLandingPage() {
    
     <div>
    
-    <a href="/login" className="exit-link">
+    <Link to="/login" className="exit-link">
       Login
-    </a>
-    <a href="/register" className="exit-link">
+    </Link>
+    <Link to="/register" className="exit-link">
       Register
-    </a>
-    <a href="/" className="exit-link">
+    </Link>
+    <Link to="/" className="exit-link">
       Exit
-    </a></div>
+    </Link></div>
   </div>
 
 

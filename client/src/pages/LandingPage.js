@@ -21,7 +21,7 @@ function LandingPage() {
     <div className="container-fluid landing">
       <div className="d-flex links-container">
         <a  onClick={showLocationModal}>Location</a>
-        <a href="/showItems">All Products</a>
+        <Link to="/showItems">All Products</Link>
         <a  onClick={showContactModal}>Contact Us</a>
         <a  onClick={showAboutUsModal}>About Us</a>
       </div>

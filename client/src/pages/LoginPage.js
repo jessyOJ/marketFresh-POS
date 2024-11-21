@@ -84,7 +84,7 @@ return (
           </Form.Item>
           <div className="d-flex justify-content-between align-items-center" >
           <p  style={{ color: "#888" }}>
-                                    Not yet Registered?  <Link href="/register" style={{ color: "#1890ff" ,textDecoration:"none"}}>Register</Link>
+                                    Not yet Registered?  <Link to="/register" style={{ color: "#1890ff" ,textDecoration:"none"}}>Register</Link>
                                 </p>
             <Button className="custom-ant-btn ml-2" type="primary" htmlType="submit" block>
               Log In

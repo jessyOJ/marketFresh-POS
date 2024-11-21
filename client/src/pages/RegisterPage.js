@@ -99,7 +99,7 @@ function RegisterPage() {
                         
                         <div className="d-flex justify-content-between align-items-center">
                                 <p  style={{ color: "#888" }}>
-                                    Already have an account? <Link href="/login" style={{ color: "#1890ff" ,textDecoration:"none"}}>Sign in</Link>
+                                    Already have an account? <Link to="/login" style={{ color: "#1890ff" ,textDecoration:"none"}}>Sign in</Link>
                                 </p>
                                 <Button className="custom-ant-btn ml-2  "
                                 type="primary"
