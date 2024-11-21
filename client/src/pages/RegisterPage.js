@@ -4,7 +4,7 @@ import  BASE_URL  from "../config";
 import { Form, Input,Row,Col, Button, message } from 'antd';
 import { useDispatch } from 'react-redux';
 import '../resources/auth.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link} from 'react-router-dom';
 function RegisterPage() {
     const dispatch = useDispatch();
     const navigate =useNavigate()
@@ -99,7 +99,7 @@ function RegisterPage() {
                         
                         <div className="d-flex justify-content-between align-items-center">
                                 <p  style={{ color: "#888" }}>
-                                    Already have an account? <a href="/login" style={{ color: "#1890ff" ,textDecoration:"none"}}>Sign in</a>
+                                    Already have an account? <Link href="/login" style={{ color: "#1890ff" ,textDecoration:"none"}}>Sign in</Link>
                                 </p>
                                 <Button className="custom-ant-btn ml-2  "
                                 type="primary"

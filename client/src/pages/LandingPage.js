@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link } from "react-router-dom";
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import "../resources/LandingPage.css"; 
@@ -55,7 +55,7 @@ function LandingPage() {
       >
         <div className="modal-content">
         <h2>You can contact us at:</h2>
-        <p>Email: <a href="mailto:support@marketfresh.com">support@marketfresh.com</a></p>
+        <p>Email: <Link href="mailto:support@marketfresh.com">support@marketfresh.com</Link></p>
         <p>Phone: +234 806 0548424</p>
         </div>
        

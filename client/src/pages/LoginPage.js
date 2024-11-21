@@ -5,7 +5,7 @@ import { Form, Input,Row,Col, Button,Typography,message } from 'antd';
 import { UserOutlined, LockOutlined  } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
 import '../resources/login.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,Link} from 'react-router-dom';
 function LoginPage() {
   const dispatch=useDispatch()
   const navigate= useNavigate()
@@ -84,7 +84,7 @@ return (
           </Form.Item>
           <div className="d-flex justify-content-between align-items-center" >
           <p  style={{ color: "#888" }}>
-                                    Not yet Registered?  <a href="/register" style={{ color: "#1890ff" ,textDecoration:"none"}}>Register</a>
+                                    Not yet Registered?  <Link href="/register" style={{ color: "#1890ff" ,textDecoration:"none"}}>Register</Link>
                                 </p>
             <Button className="custom-ant-btn ml-2" type="primary" htmlType="submit" block>
               Log In
