@@ -70,7 +70,7 @@ function HomePage() {
                 }`}
               >
                 <h4>{category.name}</h4>
-                <img src={category.imgUrl} width="80px" height="50px" />
+                <img src={category.imgUrl} width="80px" height="50px" alt=""/>
                 
               </div>
               

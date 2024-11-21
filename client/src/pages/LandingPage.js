@@ -20,10 +20,10 @@ function LandingPage() {
   return (
     <div className="container-fluid landing">
       <div className="d-flex links-container">
-        <a  onClick={showLocationModal}>Location</a>
+        <Link  onClick={showLocationModal}>Location</Link>
         <Link to="/showItems">All Products</Link>
-        <a  onClick={showContactModal}>Contact Us</a>
-        <a  onClick={showAboutUsModal}>About Us</a>
+        <Link  onClick={showContactModal}>Contact Us</Link>
+        <Link  onClick={showAboutUsModal}>About Us</Link>
       </div>
 
       {/* Location Modal */}

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 import  BASE_URL  from "../config";
-import { Form, Input,Row,Col, Button,Typography,message } from 'antd';
+import { Form, Input,Row,Col, Button,message } from 'antd';
 import { UserOutlined, LockOutlined  } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
 import '../resources/login.css'

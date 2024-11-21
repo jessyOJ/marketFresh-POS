@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { Button, Modal, Table, message } from "antd";
+import { Button, Modal, Table } from "antd";
 import { useDispatch } from "react-redux";
 import { EyeOutlined } from "@ant-design/icons";
 import DefaultLayout from "./DefaultLayout";
